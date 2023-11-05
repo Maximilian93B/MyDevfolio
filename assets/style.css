@@ -1,12 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+.logo
+{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 
+}
+
+.navbar a 
+{
+position: relative;
+font-size: 18px;
+color: #fff;
+font-weight: 500;
+text-decoration: none;
+margin-left: 20px;
+}
+
+.navbar a::before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+}
+
+.navbar a:hover:before
+{
+    width: 100%;
+}
+
+.header 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
 
 body { 
 
     margin: 0;
     padding: 0;
-    background: #111111;
-    background-size: cover;
+    background: #161614;
     font-family: 'Lato', sans-serif;
 }
 
@@ -26,27 +71,27 @@ div
 
 div::before
 {
-content:"" ;
-position: absolute;
-bottom: 80px;
-width: 100%;
-left: 0;
-height: 4px;
-background:#ffffff ;
-box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e;
-z-index: -1 ;
+    content:"" ;
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    background:#ffffff ;
+    box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+    z-index: -1 ;
 }
 div::after
 {
-content:"" ;
-position: absolute;
-top: 80px;
-width: 100%;
-left: 0;
-height: 4px;
-background:#ffffff ;
-box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e;
-z-index: -1 ;
+    content:"" ;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    background:#ffffff ;
+    box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+    z-index: -1 ;
 }
 h1
 {
@@ -115,6 +160,99 @@ h1 span:nth-child(8)
     {
         opacity: 1;
     }
+    }
+    section {
+        padding: 40px;
+        background: #222;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .work-item {
+        margin-top: 20px;
+    }
+    
+    .work-item img {
+        max-width: 100%;
+    }
+    hero {
+        background-image: url("your-hero-image.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+        position: relative;
+    }
+    
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #1eff4e;
+        color: #111111;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+    
+    .cta-button:hover {
+        background: #15cb3c;
+    }
+    
+    /* Media queries for responsiveness */
+    
+    /* For screens smaller than 768px (e.g., mobile devices) */
+    @media (max-width: 767px) {
+        .hero {
+            padding: 50px 0;
+        }
+    
+        .hero h1 {
+            font-size: 2em;
+        }
+    
+        .hero p {
+            font-size: 1em;
+        }
+    
+        .cta-button {
+            font-size: 0.8em;
+        }
+    }
+    
+    /* For screens between 768px and 1024px (e.g., tablets) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .hero {
+            padding: 75px 0;
+        }
+    
+        .hero h1 {
+            font-size: 2.2em;
+        }
+    
+        .hero p {
+            font-size: 1.1em;
+        }
     }
 
 
