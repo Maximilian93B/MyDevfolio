@@ -1,5 +1,15 @@
-*{
-    margin: 0;
+@font-face {
+    font-family: 'Poppins'; /* Name you want to use for the font */
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap) format('woff'); /* URL to the font file and its format */
+    /* You can include additional source formats here */
+}
+
+
+
+
+*
+{
+
     padding: 0;
     box-sizing: border-box;
     
@@ -11,8 +21,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Lato', sans-serif;
-    background-position: center;
+    font-family: "Poppins", sans-serif
     }
 
     .header
@@ -32,10 +41,10 @@ body {
 .logo
 {
    font-size: 48px;
-   color: #ffffff;
+   color: #000000;
    text-decoration: none;
    font-weight: 700;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family:'Poppins';
 
 
 }
@@ -43,11 +52,11 @@ body {
 {
 position: relative;
 font-size: 18px;
-color: #ffffff;
+color: #000000;
 font-weight: 700;
 text-decoration: none;
 margin-left: 40px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: "Poppins", sans-serif
 }
 .navbar a::before
 {
@@ -57,7 +66,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     left: 0;
     width: 0%;
     height: 2px;
-    background: #fff;
+    background: #000000;
     transition: .3s;
 }
 .navbar a:hover:before
@@ -182,100 +191,8 @@ h1 span:nth-child(8)
     {
         opacity: 1;
     }
-    }
-    section {
-        padding: 40px;
-        background: #222;
-        color: #fff;
-        text-align: center;
-    }
-    
-    .section h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    
-    .work-item {
-        margin-top: 20px;
-    }
-    
-    .work-item img {
-        max-width: 100%;
-    }
-    hero {
-        background-image: url("");
-        background-size: cover;
-        background-position: center;
-        color: #fff;
-        text-align: center;
-        padding: 100px 0;
-        position: relative;
-    }
-    
-    .hero-content {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .hero h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-    }
-    
-    .hero p {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-    }
-    
-    .cta-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background: #1eff4e;
-        color: #111111;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: 700;
-    }
-    
-    .cta-button:hover {
-        background: #15cb3c;
-    }
-    
-    /* Media queries for responsiveness */
-    
-    /* For screens smaller than 768px (e.g., mobile devices) */
-    @media (max-width: 767px) {
-        .hero {
-            padding: 50px 0;
-        }
-    
-        .hero h1 {
-            font-size: 2em;
-        }
-    
-        .hero p {
-            font-size: 1em;
-        }
-    
-        .cta-button {
-            font-size: 0.8em;
-        }
-    }
-    
-    /* For screens between 768px and 1024px (e.g., tablets) */
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .hero {
-            padding: 75px 0;
-        }
-    
-        .hero h1 {
-            font-size: 2.2em;
-        }
-    
-        .hero p {
-            font-size: 1.1em;
-        }
-    }
+}
+
 
 
 
