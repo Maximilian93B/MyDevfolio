@@ -5,7 +5,7 @@
     font-family:"Poppins", sans-serif
 }
 body{
-    overflow: hidden;
+    overflow:scroll;
 }
 .container{
     width: 100%;
@@ -83,11 +83,42 @@ b{
     left: -12%;
     top: 40%;
     background: linear-gradient(45deg, #7f00ff, #ffffff);
-    animation: object 6s linear infinite;
+    animation: object1 7s linear infinite;
 }
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, #ffffff);
+    animation: object2 7s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+
+
 
 .cols{
     width:50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+
+
 }
 .topline{
     display: block;
@@ -102,13 +133,13 @@ b{
     height: 4px;
     width: 45px;
     bottom: 10px;
-    color: #7f00ff;
+    color: #3d535f;
 }
 h1{
     display: block;
     font-size: 7em;
     font-weight: 900;
-    color: #3d535f;
+    color: #7f00ff;
 }
 
 .mulitText{
@@ -128,6 +159,7 @@ p{
     width: 100%;
     position: relative;
     left: 15px;
+    border-radius: 10px;
 
 }
 button{
@@ -190,3 +222,22 @@ button:hover {
             
         }
     }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        background: #ffffff;
+        padding-bottom: 6rem;
+    }
+    .heading{ 
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        text-align: center ;
+    }
+
+    .about-img{
+
+    }
+    
