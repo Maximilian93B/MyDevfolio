@@ -1,86 +1,57 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximilian Bosch Full Stack Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <nav>
-        <div class="logo">DevFoliO<b>.</b></div>
-        <ul class="navItems">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">skills</a></li>
-            <li><a href="#">Media</a></li>
-        </ul>
-        <div class="links">
-            <li><a href="#"><i class = "fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class = "fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class = "fab fa-twitter"></i></a></li>
-        </div>
-    </nav>
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title> My First DEvFolio</title>
 
-    <div class="wrapper">
-        <div class="cols cols0">
-            <span class="topline">Hey</span>
-            <h1>I'm <span class=".mulitText">Max</span></h1>
-            <p>I am a Full Stack Developper and Designer, My love for code is shown through my work. I am playful but disciplined in my apporach. I cant wait to see what we can do. A few things about me, outside of my love for developping. I am an avid player/fan of Soccer it really is my biggest passion next to this. Anyway take a look around, cant wait to hear from you.</p>
-            <div class="btns">
-                <button>Download Resume</button>
-                <button>Hire Me</button>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Max.</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contct</a>
+        </nav>
+    </header>
+    
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1> Hi, I'm <span>Max Bosch</span></h1>
+        <div class="text-animate">
+            <h3>Aspiring FullStack Developper</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptate provident animi ipsum, laborum adipisci enim deleniti, nemo consequuntur aliquam ducimus illo repudiandae nam corrupti placeat nulla?</p>
+
+            <div class="btn-box">
+
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Lets Get in Touch</a>
             </div>
-            <div class="cols0 cols1">
-                <div class="imgbox">
-                    <img src="" id="splash">
-                    <img src="">
-                </div>
-            </div>
+            </p>
+
         </div>
     </div>
-
-    <!---ABOUT me Section Design-->
-    <section class="about-image" id="about">
-        <h2 class= "heading">About <span>Me</span></h2>
-
-        <div class=" about-img">
-            <img src="./assets/pexels-alexander-ant-4585185.jpg" alt="">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>FullStack Developper!</h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas laborum veniam eius explicabo ipsam quidem mollitia qui possimus nostrum incidunt pariatur nesciunt, iusto velit aliquam porro nam voluptates harum exercitationem id eveniet et. Minima suscipit quae ab adipisci consequuntur fuga at quia provident, repellendus officia, rem, cumque qui et.</p>
-            
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
-            </div>           
-        </div>
-    </section> 
+</section>
 
 
-    </section>
 
-     
-
-    
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typingEffect = new Typed(".multiText",{
-            strings: [ "Coder", "Designer", "Driven"],
-            loop: true, 
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1500,
-            })
-    </script>   
+    <script src="./assets/script.js"></script>
 </body>
 </html>
-  
-
         
 
 
