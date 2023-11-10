@@ -60,6 +60,7 @@ transition: .3s;
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
+    transition: .3s;
 }
 
 #menu-icon{
@@ -112,7 +113,7 @@ max-width: 60rem;
 }
 
 .home-content p { 
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 2rem 0 4rem;
 
 }
@@ -126,6 +127,9 @@ max-width: 60rem;
 
 }
 
+.btn-box a{
+    font-size: 1.3rem;
+}
 .btn-box .btn{
     position: relative;
     display: inline-flex;
@@ -133,7 +137,7 @@ max-width: 60rem;
     align-items: center;
     width: 15rem;   
     height: 100%;
-    background: var(--main-colorr);
+    background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: 1.8rem;
     font-weight: 600;
@@ -150,16 +154,16 @@ max-width: 60rem;
 
 .btn-box .btn:nth-child(2){
     background:transparent;
-    color: var(--main-color);
+    color: var(--secondbg-color);
 }
 
 
 .btn-box .btn:nth-child(2):hover{
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
 .btn-box .btn:nth-child(2)::before{
-    background-color: var(--text-color);
+    background-color: var(--main-color);
     }
 
 .btn-box .btn::before{
@@ -227,13 +231,13 @@ max-width: 60rem;
     height: 100%;
     background: transparent;
     border: transparent;
-    transition: 3s;
+    transition: 1s;
 }
 
 .home-imgHover:hover { 
 
     background: var(--background-color);
-    opacity: .9;
+    opacity: .8;
 }
 
 .about{
@@ -248,7 +252,7 @@ max-width: 60rem;
 }
 
 .heading{
-    font-size: 5rem;
+    font-size: 8rem;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -292,11 +296,11 @@ span{
 }
 
 .about-content h3 {
-    font-size: 2.6rem;
+    font-size: 4.6rem;
 }
 
 .about-content p { 
-    font-size:1.6rem;
+    font-size:2.6rem;
     margin: 2rem 0 3rem;
 }
 
@@ -320,8 +324,9 @@ span{
 
 .education .education-row{
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 gap: 5rem;
+font-size: 3rem;
 
 }
 
@@ -330,7 +335,7 @@ gap: 5rem;
 }
 
 .education-column .title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0 0 1.5rem 2rem;
 }
 
@@ -394,6 +399,7 @@ padding-right: .5rem;
 
 .education-content .content h3 { 
     font-size: 2rem;
+;
 }
 
 .education-content .content p { 
@@ -532,7 +538,7 @@ flex-wrap: wrap;
 }
 
 .contact form .focus{
-    position:absolute;
+    position:relative;
     top: 0;
     left: 0;
     width: 0;
@@ -563,3 +569,56 @@ flex-wrap: wrap;
 .contact form .btn-box.btns .btn{
     cursor: pointer;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--secondbg-color);
+
+}
+
+.footee-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+    
+
+}
+
+.footer-iconTop a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--secondbg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before{
+
+    width: 100%;
+
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--background-color);
+}
+
